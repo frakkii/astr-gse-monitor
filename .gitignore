@@ -1,0 +1,37 @@
+# Altium Designer project outputs and generated files
+Project Outputs for *
+__Previews/
+History/
+Project Logs for *
+*.PcbDoc.Bak
+*.SchDoc.Bak
+*.PrjPcb.Bak
+*.OutJob.Bak
+*.~*
+
+# Altium cache/lock files
+*.lck
+*.dsn
+*.ddb
+
+# Altium backup/versioned copies
+*(Backup*)*
+*[Backup]*
+
+# CAM/Gerber output folders (regenerate these, don't need to version them raw)
+CAMOutputs/
+CFP*/
+
+# DRC/ERC report files (regenerate on demand)
+*.DRC
+*.ERC
+
+# OS/editor junk (good to include regardless of tool)
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+
+# IDE/editor folders, if you ever open this repo in VS Code etc.
+.vscode/
