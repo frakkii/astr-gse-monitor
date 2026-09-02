@@ -16,7 +16,7 @@ Project Logs for *
 
 # Altium backup/versioned copies
 *(Backup*)*
-*[Backup]*
+*\[Backup\]*
 
 # CAM/Gerber output folders (regenerate these, don't need to version them raw)
 CAMOutputs/
