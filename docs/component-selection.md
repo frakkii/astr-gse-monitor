@@ -111,9 +111,35 @@ different distributors
 - **Other criteria**
     - Must exceed 120VAC with margin
     - Fuse holder and replaceable fuse cartridge will be chosen due to simplicity of replacement compared to soldering and resoldering it every time it blows --> THUS, both of those components must match sizes
-
+  
 - **Fuse chosen** --> 696108003002 from Wurth Elektronik, $0.64 per unit, 32,090 in stock, 20A current rating, 250VAC working voltage
   
+## Humidity/Temp Module
+- **Why is it needed?**
+     Board's enclosure is IP66-sealed and runs significantly hotter inside than ambient (the panel has 6 power supplies). Sealed enclosures also trap humidity, risking condensation on internal components during heat/cool cycles. Nobody can monitor this without a sensor, since the enclosure stays closed during operation.
+
+- **Criteria**:
+    - Combined temperature + humidity in one part (saves board space/wiring vs. two separate sensors)
+    - I2C interface
+    - 3.3V compatible
+    - 0-100% RH range
+    - Reasonable accuracy (±5% RH or better)
+    - Module/breakout preferred over bare SMD IC, for easier hand assembly given limited soldering experience with fine-pitch parts
+    - In stock, reasonable lead time
+
+- **Decision Matrix**:
+
+| Criteria | CC2D33S-SIP (ChipCap2) | 2857 (Adafruit SHT31-D) |
+|---|---|---|
+| Accuracy | ±3% RH | ±2% RH |
+| Interface | I2C | I2C |
+| Voltage | 3.3V | 3.3V ~ 5V |
+| Mounting | Through-hole, fixed SIP (vertical only) | Breakout header, flexible mounting |
+| Documentation/community support | Industrial datasheet only | Extensive tutorials, example code, widely used |
+| Price (CAD) | $22.65/unit | $20.44/unit |
+| In stock | 709 | 813 |
+| **Verdict** | Rejected — less accurate, industrial-only documentation, no real cost advantage once compared directly | **Selected** — better accuracy, strong documentation/community support (valuable given this is a first-time I2C sensor integration), comparable price |
+
   
 
  
