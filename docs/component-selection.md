@@ -112,7 +112,8 @@ different distributors
     - Must exceed 120VAC with margin
     - Fuse holder and replaceable fuse cartridge will be chosen due to simplicity of replacement compared to soldering and resoldering it every time it blows --> THUS, both of those components must match sizes
 
-- **Fuse chosen** --> 696108003002 from Wurth Elektronik, $0.64 per unit, 32,090 in stock, 20A current rating, 250VAC working voltage
+- **Fuse holder chosen** --> 696108003002 from Wurth Elektronik, $0.64 per unit, 32,090 in stock, 20A current rating, 250VAC working voltage
+- **Fuse cartridge chosen** --> 
   
   
 
